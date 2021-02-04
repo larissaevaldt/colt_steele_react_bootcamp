@@ -1,0 +1,12 @@
+Using bootstrap in React:
+
+npm install --save bootstrap
+
+added to index.js:
+import "bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+If you still don't have these two need to be imported as well:
+npm install --save jquery popper.js
+
+
