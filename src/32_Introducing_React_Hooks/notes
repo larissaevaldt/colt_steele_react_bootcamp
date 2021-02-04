@@ -1,0 +1,24 @@
+React Hooks is a kind of a new paradigm in how we construct / how we write our components and how we think about React.
+Hooks allow us to hook into the internal magic / the internal workings of React.
+
+Main Benefits: Write code that is SHORTER, EASIER TO UNDERSTAND and also REUSABLE.
+We can write stateful logic that can be reused between 2, 3 or 20 different components.
+
+Hooks allow us to write function or functional components that have all of the features of a class based component. Things are shorter, easir to understand and easier to reuse between components. There multiple built in hooks that come with React.
+
+1) useState: Allow us to write a functional component where we don't have a class, we don't have a constructor, but we can still write stateful logic. We need to first import it:
+import React, { useState } from 'react';
+
+Call useState passing in an initial value for whatever the thing that we want to store in state
+Ex: useState(0)
+
+This function will return an array to us with 2 different pieces:
+The first piece is a reference to the state itself/ to a piece of state
+The second thing is a function to update that piece of state
+We can call the variables whatever we want.
+EX: const [counter, setCounter] = useState(0)
+counter is a reference to whatever the current value of that state is
+We can then use that counter value and update it's value by calling setCounter anywhere in our functional
+Ex: <h1>{counter}</h1> or
+    <button onClick={() => setCounter(counter + 1)}> Add 1 </button>
+Resume: Call useState - Give it an initial value - It returns 2 things: a reference to that piece of state and a function that will change that piece of state - We can use both of them in our component.
